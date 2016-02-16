@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/startServiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startFileService"
+        android:text="@string/DSAU" />
+
+    <EditText
+        android:id="@+id/downloadText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:editable="false"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:paddingBottom="10dp"
+        android:scrollbars="vertical"
+        android:textColor="#ff0f00"
+        android:textSize="17sp" />
+
+</LinearLayout>
